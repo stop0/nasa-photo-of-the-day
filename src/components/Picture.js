@@ -19,7 +19,7 @@ function Picture () {
     return (
       <div className="search-bar-wrapper" >
           {Picture1()}
-          <img src = {picture}  /> 
+          <img src = {picture}  alt="Nasa Daily Pic"/> 
       </div>
     );
   };
