@@ -18,7 +18,8 @@ function Picture () {
   
     return (
       <div className="search-bar-wrapper" >
-          <button onClick = {Picture1}> Click for Picture{picture}</button>
+          {Picture1()}
+          <img src = {picture}  /> 
       </div>
     );
   };

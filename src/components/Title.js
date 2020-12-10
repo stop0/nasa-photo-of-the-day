@@ -18,7 +18,7 @@ function Title () {
 
     return (
       <div className="search-bar-wrapper" >
-          <button onClick = {Title1}> Click for Title{title}</button>
+          <h1 >{Title1()} {title}</h1>
       </div>
     );
   };

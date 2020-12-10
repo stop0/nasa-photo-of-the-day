@@ -18,7 +18,7 @@ function Date () {
 
     return (
       <div className="search-bar-wrapper" >
-          <button onClick = {Date1}> Click for date{date}</button>
+          <h2 >{Date1()} {date}</h2>
       </div>
     );
   };

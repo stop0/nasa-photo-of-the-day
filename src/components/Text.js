@@ -18,7 +18,7 @@ function Text () {
 
   return (
     <div className="search-bar-wrapper" >
-        <button onClick = {Text1}> Click for Text{text}</button>
+        <p >{Text1()} {text}</p>
     </div>
   );
 };
