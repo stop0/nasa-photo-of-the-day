@@ -1,5 +1,18 @@
 import React, { useState } from "react";
 import axios from 'axios';
+import styled from 'styled-components';
+
+
+
+
+
+const WrapperDiv = styled.div`
+
+    width: 100%;
+    height: 100%;
+    background-color : #ffe7b1		;
+    padding:20px;
+`;
 
 
 function Date () {
@@ -17,9 +30,9 @@ function Date () {
         }
 
     return (
-      <div className="search-bar-wrapper" >
+      <WrapperDiv className="search-bar-wrapper" >
           <h2 >{Date1()} {date}</h2>
-      </div>
+      </WrapperDiv>
     );
   };
   

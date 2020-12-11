@@ -1,5 +1,19 @@
 import React, { useState } from "react";
 import axios from 'axios';
+import styled from 'styled-components';
+
+
+
+const WrapperDiv = styled.div`
+
+    width: 100%;
+    height: 100%;
+    background-color : #fbc34a	;
+    padding:20px;
+
+    
+`;
+
 
 
 function Picture () {
@@ -17,10 +31,10 @@ function Picture () {
         }
   
     return (
-      <div className="search-bar-wrapper" >
+      <WrapperDiv className="search-bar-wrapper" >
           {Picture1()}
           <img src = {picture}  alt="Nasa Daily Pic"/> 
-      </div>
+      </WrapperDiv>
     );
   };
   export default Picture;
