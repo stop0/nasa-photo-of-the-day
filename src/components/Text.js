@@ -18,23 +18,12 @@ const WrapperDiv = styled.div`
 
 
 
-function Text () {
-  const [text, setText] = useState('')
+function Text (props) {
 
-  const Text1  = ()  => {
-      axios.get('https://api.nasa.gov/planetary/apod?api_key=bzQyI69dTsLGdYrAxKCfgaqYp3xnTLP8Ad79aRSw')
-      .then(function (response) {
-        console.log(response.data.explanation);
-        setText(response.data.explanation)
-      })
-      .catch(function (error) {
-        console.log(error);
-      })
-      }
 
   return (
     <WrapperDiv className="search-bar-wrapper" >
-        <p >{Text1()} {text}</p>
+        <p > {props.text}</p>
     </WrapperDiv>
   );
 };

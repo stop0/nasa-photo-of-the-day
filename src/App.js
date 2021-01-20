@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import axios from 'axios';
 import Date from './components/Date'
@@ -19,12 +19,13 @@ box-sizing: border-box;
 
 
 function App() {
-  
+   const [api, setApi] = useState('')
 
   useEffect(() => {
 
     axios.get('https://api.nasa.gov/planetary/apod?api_key=bzQyI69dTsLGdYrAxKCfgaqYp3xnTLP8Ad79aRSw')
     .then(function (response) {
+      setApi(response.data)
       console.log(response.data.title);
     })
     .catch(function (error) {
@@ -36,10 +37,10 @@ function App() {
 
   return (
     <WrapperDiv className="App">
-      < Title  />
-      < Picture />
-      < Text />
-      < Date />
+      < Title  title = {api.title}/>
+      < Picture pic = {api.url}/>
+      < Text text = {api.explanation}/>
+      < Date date = {api.date}/>
 
 
     </WrapperDiv>

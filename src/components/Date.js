@@ -15,23 +15,12 @@ const WrapperDiv = styled.div`
 `;
 
 
-function Date () {
-    const [date, setDate] = useState('')
+function Date (props) {
 
-    const Date1  = ()  => {
-        axios.get('https://api.nasa.gov/planetary/apod?api_key=bzQyI69dTsLGdYrAxKCfgaqYp3xnTLP8Ad79aRSw')
-        .then(function (response) {
-          console.log(response.data.date);
-          setDate(response.data.date)
-        })
-        .catch(function (error) {
-          console.log(error);
-        })
-        }
 
     return (
       <WrapperDiv className="search-bar-wrapper" >
-          <h2 >{Date1()} {date}</h2>
+          <h2 > {props.date}</h2>
       </WrapperDiv>
     );
   };
