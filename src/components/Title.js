@@ -9,16 +9,16 @@ const WrapperDiv = styled.div`
     width: 100%;
     height: 100%;
     color : #403e44;
-    background-color : #ffe7b1;
+    background-color : #379683;
     padding:20px;
 
 `;
 
 function Title (props) {
-
+    const {title} = props
     return (
       <WrapperDiv className="WrapperDiv" >
-          <h1 >{props.title}</h1>
+          <h1 >{title}</h1>
       </WrapperDiv>
     );
   };

@@ -8,7 +8,7 @@ const WrapperDiv = styled.div`
 
     width: 100%;
     height: 100%;
-    background-color : #fbc34a	;
+    background-color : #7395AE	;
     padding:20px;
 
     
@@ -17,10 +17,10 @@ const WrapperDiv = styled.div`
 
 
 function Picture (props) {
-  
+    const {pic} = props
     return (
       <WrapperDiv className="search-bar-wrapper" >
-          <img src = {props.pic}  alt="Nasa Daily Pic"/> 
+          <img src = {pic}  alt="Nasa Daily Pic"/> 
       </WrapperDiv>
     );
   };

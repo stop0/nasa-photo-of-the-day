@@ -33,7 +33,7 @@ function App() {
     })
 
 
-  })
+  },[])
 
   return (
     <WrapperDiv className="App">

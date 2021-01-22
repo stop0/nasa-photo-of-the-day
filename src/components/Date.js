@@ -10,17 +10,17 @@ const WrapperDiv = styled.div`
 
     width: 100%;
     height: 100%;
-    background-color : #ffe7b1		;
+    background-color : #B1A296		;
     padding:20px;
 `;
 
 
 function Date (props) {
-
+  const {date} = props
 
     return (
       <WrapperDiv className="search-bar-wrapper" >
-          <h2 > {props.date}</h2>
+          <h2 > {date}</h2>
       </WrapperDiv>
     );
   };

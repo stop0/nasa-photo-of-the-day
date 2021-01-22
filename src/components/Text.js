@@ -19,11 +19,11 @@ const WrapperDiv = styled.div`
 
 
 function Text (props) {
-
+  const {text}= props
 
   return (
     <WrapperDiv className="search-bar-wrapper" >
-        <p > {props.text}</p>
+        <p > {text}</p>
     </WrapperDiv>
   );
 };
